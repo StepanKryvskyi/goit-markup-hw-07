@@ -48,11 +48,18 @@
             </li>
           </ul>
         </address>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icon.svg#menu-btn"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Main -->
     <main>
       <!-- Hero -->
+
       <section class="hero">
         <div class="container">
           <h1 class="hero-titel">Effective Solutions for Your Business</h1>
@@ -61,6 +68,7 @@
       </section>
 
       <!-- Advantages -->
+
       <section class="advantages">
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
@@ -118,6 +126,7 @@
       </section>
 
       <!-- What are we doing -->
+
       <section class="works">
         <div class="container">
           <h2 class="heading">What are we doing</h2>
@@ -136,6 +145,7 @@
       </section>
 
       <!-- Our Team -->
+
       <section class="team-section">
         <div class="container">
           <h2 class="heading">Our Team</h2>
@@ -410,7 +420,8 @@
       </section>
 
       <!-- Partners -->
-      <section class="partners">
+
+      <!-- <section class="partners">
         <div class="container">
           <h2 class="customers-titel">Customers</h2>
           <ul class="list partner-list">
@@ -458,11 +469,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+
+    <!-- <footer class="footer">
       <div class="footer-container container">
         <div class="footer-logo-text">
           <a href="./index.html" class="link logo-dark"
@@ -551,9 +563,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Modal windo -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
@@ -564,7 +577,7 @@
         <strong class="modal-title"> Leave your contacts and we will call you back </strong>
         <form class="modal-form" name="contact-forn">
           <label class="modal-form-label" for="user_name">
-            <span class="user-form-titel">Name</span> 
+            <span class="user-form-titel">Name</span>
             <input
               class="modal-form-input"
               type="text"
@@ -579,7 +592,7 @@
           </label>
 
           <label class="modal-form-label" for="user_phone">
-            <span class="user-form-titel">Phone</span> 
+            <span class="user-form-titel">Phone</span>
             <input
               class="modal-form-input"
               type="tel"
@@ -595,7 +608,7 @@
           </label>
 
           <label class="modal-form-label" for="user_email">
-            <span class="user-form-titel">Email</span> 
+            <span class="user-form-titel">Email</span>
             <input
               class="modal-form-input"
               type="email"
@@ -639,6 +652,98 @@
       </div>
     </div>
 
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="modal-btn js-close-menu" type="button" data-modal-close>
+        <svg class="modal-icon" width="8" height="8">
+          <use href="./images/icon.svg#icon-cloose-button "></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li>
+          <a href="./index.html" class="active link mobile-nav">Studio</a>
+        </li>
+        <li>
+          <a href="./portfolio.html" class="link mobile-nav">Portfolio</a>
+        </li>
+        <li>
+          <a href="" class="link mobile-nav">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li>
+          <a class="link tel-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li>
+          <a class="link email-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="socials-footer-list mobile-socials list">
+        <li class="socials-footer-item">
+          <a
+            class="socials-footer-link link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram icon"
+          >
+            <svg class="socials-footer-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-footer-item">
+          <a
+            class="socials-footer-link link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter icon"
+          >
+            <svg class="socials-footer-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-footer-item">
+          <a
+            class="socials-footer-link link"
+            href="https://facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook icon"
+          >
+            <svg class="socials-footer-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-footer-item">
+          <a
+            class="socials-footer-link link"
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Linkedin icon"
+          >
+            <svg class="socials-footer-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
