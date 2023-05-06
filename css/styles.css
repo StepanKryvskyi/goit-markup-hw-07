@@ -67,11 +67,18 @@ button {
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 320px) {
+  .container {
+    overflow-x: auto;
+  }
 }
 
-@media only screen and (min-width: 786px) {
+@media only screen and (min-width: 768px) {
   .container {
-    max-width: 736px;
+    max-width: 768px;
+    overflow-x: auto;
   }
 }
 
@@ -126,7 +133,7 @@ button {
 .nav-contacts {
   display: none;
 }
-@media only screen and (min-width: 786px) {
+@media only screen and (min-width: 768px) {
   .nav-contacts {
     display: block;
     margin-right: auto;
@@ -149,7 +156,7 @@ button {
   display: none;
 }
 
-@media only screen and (min-width: 786px) {
+@media only screen and (min-width: 768px) {
   .nav-list {
     display: flex;
     gap: 40px;
@@ -350,31 +357,29 @@ button {
 
 .advantages-list {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 72px;
+  flex-wrap: wrap;
+  gap: 72px 24px;
 }
 
-@media only screen and (min-width: 1158px) {
-  .advantages-list {
-    flex-direction: row;
-
-    gap: 24px;
+@media only screen and (min-width: 768px) {
+  .advantages-items {
+    width: 356px;
   }
 }
 
 @media only screen and (min-width: 1158px) {
   .advantages-items {
-    width: calc((100% - 72px) / 4);
-  } 
+    width: 264px;
+  }
 }
 
 /* Works-ex */
 
-.works{
+.works {
   display: none;
 }
-
 
 @media only screen and (min-width: 1158px) {
   .works {
@@ -408,11 +413,18 @@ button {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.team-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+}
 
 .team-list-item {
   font-size: 16px;
   line-height: 1.5;
-  width: calc((100% - 72px) / 4);
+  width: 264px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -437,11 +449,6 @@ button {
 .team-list-text {
   text-align: center;
   margin-bottom: 8px;
-}
-
-.team-list {
-  display: flex;
-  gap: 24px;
 }
 
 /* Socials icons */
@@ -493,14 +500,23 @@ button {
 
 .partner-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px 16px;
   justify-content: center;
 }
 
 .partner-item {
-  width: 168px;
+  width: 190px;
   height: 88px;
-  padding: 16 32;
+}
+
+@media only screen and (min-width: 768px) {
+  .partner-list {
+    gap: 72px 24px;
+  }
+  .partner-item {
+    width: 168px;
+  }
 }
 
 .partner-links {
@@ -537,9 +553,17 @@ button {
 
 .button-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: left;
+
   margin-bottom: 72px;
-  gap: 24px;
+  gap: 16px 24px;
+}
+@media only screen and (min-width: 768px) {
+  .button-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 
 .ptf-btn {
@@ -572,13 +596,42 @@ button {
   display: flex;
   margin-top: 72px;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  gap: 48px;
+  justify-content: center;
+  /* column-gap: 24px;
+  row-gap: 48px; */
+}
+@media only screen and (min-width: 768px) {
+  .works-list {
+    justify-content: left;
+    gap: 72px 24px;
+  }
 }
 
-.works-item {
-  width: calc((100% - 48px) / 3);
+@media only screen and (min-width: 1158px) {
+  .works-list {
+   
+    column-gap: 24px;
+    row-gap: 48px;
+  }
 }
+.works-item {
+  width: 390px;
+
+}
+
+@media only screen and (min-width: 768px) {
+  .works-item {
+    width: 356px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .works-item {
+   width: calc((100% - 48px) / 3);
+  }
+}
+
 
 .works-box {
   position: relative;
@@ -658,13 +711,36 @@ button {
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 72px 24px;
 }
-.footer-logo-text {
-  margin-right: 120px;
+
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    justify-content: left;
+    padding: 0 164px 0 108px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-container {
+    align-items: baseline;
+    flex-wrap: nowrap;
+    padding: 0 15px;
+    gap: 0;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-logo-text {
+    margin-right: 120px;
+  }
 }
 
 .socials-footer {
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -673,12 +749,25 @@ button {
   margin-bottom: 16px;
 }
 
+@media only screen and (min-width: 768px) {
+  .socials-footer {
+    text-align: left;
+  }
+}
+
 .socials-footer-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 16px;
-  margin-right: 80px;
 }
+
+@media only screen and (min-width: 1158px) {
+  .socials-footer-list {
+    margin-right: 80px;
+  }
+}
+
 .socials-footer-link {
   display: flex;
   justify-content: center;
@@ -703,7 +792,8 @@ button {
 }
 
 .logo-dark {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   margin-bottom: 16px;
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
@@ -712,6 +802,12 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo-dark {
+    display: inline-block;
+  }
 }
 
 .logo-footer {
@@ -729,14 +825,21 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+}
 
-  gap: 24px;
+@media only screen and (min-width: 1158px) {
+  .subscribe-input-container {
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    gap: 24px;
+  }
 }
 
 .subscribe-label {
   display: flex;
-
+  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -745,8 +848,14 @@ button {
   margin-bottom: 16px;
 }
 
+@media only screen and (min-width: 768px) {
+  .subscribe-label {
+    justify-content: flex-start;
+  }
+}
+
 .subscribe-input {
-  width: 264px;
+  width: 398px;
   height: 40px;
 
   padding: 8px 16px;
@@ -756,6 +865,12 @@ button {
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-input {
+    width: 264px;
+  }
 }
 
 .subscribe-input::placeholder {
