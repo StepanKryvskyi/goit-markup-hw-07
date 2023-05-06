@@ -131,14 +131,83 @@
         <div class="container">
           <h2 class="heading">What are we doing</h2>
           <ul class="list works-ex">
+
             <li class="works-ex-item">
-              <img src="./images/computer.jpg" alt="Website on desktop" width="360" height="300" />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/section-3/computer.webp    1x,
+                    ./images/section-3/computer@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="./images/section-3/computer.jpg 1x, ./images/section-3/computer@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/section-3/computer.jpg"
+                  alt="Website on desktop"
+                  loading="lazy"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
+
             <li class="works-ex-item">
-              <img src="./images/mobil.jpg" alt="Website on smartphone" width="360" height="300" />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/section-3/mobil.webp 1x,
+                    ./images/section-3/mobil@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="./images/section-3/mobil.jpg 1x, 
+                  ./images/section-3/mobil@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/section-3/mobil.jpg"
+                  alt="Website on desktop"
+                  loading="lazy"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
+
             <li class="works-ex-item">
-              <img src="./images/both.jpg" alt="Website on both devices" width="360" height="300" />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/section-3/both.webp 1x,
+                    ./images/section-3/both@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="./images/section-3/both.jpg 1x, 
+                  ./images/section-3/both@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/section-3/both.jpg"
+                  alt="Website on desktop"
+                  loading="lazy"
+                  width="360"
+                  height="300"
+                />
+              </picture>
+              
             </li>
           </ul>
         </div>
@@ -152,12 +221,29 @@
 
           <ul class="list team-list">
             <li class="team-list-item">
-              <img
-                src="./images/mark.jpg"
-                alt="Product Designer Mark Guerrero"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/mark.webp 1x,
+                    ./images/team/mark@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="./images/team/mark.jpg 1x, 
+                  ./images/team/mark@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/mark.jpg"
+                  alt="Mark Guerrero Product Designer"
+                  loading="lazy"
+                  width="264"
+                 height="260"
+                />
+              </picture>
               <div class="team-container">
                 <h3 class="team-titel">Mark Guerrero</h3>
                 <p class="team-list-text">Product Designer</p>
@@ -218,12 +304,30 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/tom.webp 1x,
+                    ./images/team/tom@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="./images/team/tom.jpg 1x, 
+                  ./images/team/tom@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
                 src="./images/tom.jpg"
                 alt="Frontend Developer Tom Ford"
-                width="264"
-                height="260"
-              />
+                  loading="lazy"
+                  width="264"
+                 height="260"
+                />
+              </picture>
+             
               <div class="team-container">
                 <h3 class="team-titel">Tom Ford</h3>
                 <p class="team-list-text">Frontend Developer</p>
@@ -284,12 +388,29 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/camila.webp 1x,
+                    ./images/team/camila@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="./images/team/camila.jpg 1x, 
+                  ./images/team/camila@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
                 src="./images/camila.jpg"
                 alt="Marketing Camila Garcia"
                 width="264"
                 height="260"
               />
+              </picture>
+             
               <div class="team-container">
                 <h3 class="team-titel">Camila Garcia</h3>
                 <p class="team-list-text">Marketing</p>
@@ -350,12 +471,31 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/daniel.webp 1x,
+                    ./images/team/daniel@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="./images/team/daniel.jpg 1x, 
+                  ./images/team/daniel@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
                 src="./images/daniel.jpg"
                 alt="UI Designer Daniel Wilson"
                 width="264"
                 height="260"
               />
+              </picture>
+
+
+              
               <div class="team-container">
                 <h3 class="team-titel">Daniel Wilson</h3>
                 <p class="team-list-text">UI Designer</p>
