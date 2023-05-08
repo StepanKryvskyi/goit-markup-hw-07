@@ -74,6 +74,7 @@ button {
 
 @media only screen and (max-width: 319px) {
   .container {
+    width: 100%;
     overflow: scroll;
   }
 }
@@ -281,6 +282,13 @@ button {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/hero/people-office-bg@2x.jpg);
     }
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 180px;
   }
 }
 
@@ -1047,9 +1055,28 @@ button {
   background-color: #fcfcfc;
 }
 
-@media only screen and (max-width: maxwidthpx) {
+@media only screen and (max-width: 320px) {
+  .backdrop {
+    overflow: scroll;
+  }
+
+  .modal{
+    overflow: scroll;
+    top: 80px;
+    left: 1px;
+    transform: none;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .backdrop {
+    overflow: scroll;
+  }
+
   .modal {
-    top: 15px;
+    top: 10px;
+    left: 110px;
+    transform: none;
   }
 }
 
@@ -1197,6 +1224,9 @@ button {
 .modal-form-agreement-link {
   color: var(--button-color);
 }
+
+
+
 .modal-form-agreement-checkbox:checked
   + .modal-form-agreement-icon
   > .modal-form-agreement-unchecked {
@@ -1216,6 +1246,8 @@ input[type='checkbox']:checked + .modal-form-agreement-icon > .modal-form-agreem
 .send-btn {
   margin-top: 24px;
 }
+
+
 
 .menu-container {
   position: fixed;
@@ -1292,4 +1324,9 @@ input[type='checkbox']:checked + .modal-form-agreement-icon > .modal-form-agreem
 
 .mobile-socials {
   gap: 56px;
+}
+@media only screen and (max-width: 390px) {
+  .mobile-socials {
+    gap: 30px;
+  }
 }
